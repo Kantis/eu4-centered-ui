@@ -4,25 +4,20 @@ guiTypes = {
 
 	windowType = {
 		name = "speed_controls"
-		position = { x= -90 y = -484 }
+		position = { x= 0 y = -490 }
 
 		Orientation = "CENTER_DOWN"
 
+
+
+
+		## Date 
 
 		iconType =
 		{
 			name ="icon_date_bg"
 			spriteType = "GFX_date_bg"
-			position = { x= -300 y = -16 }
-			Orientation = "UPPER_LEFT"
-		}
-
-		iconType =
-		{
-			name ="icon_score_bg"
-			spriteType = "GFX_score_bg"
-			position = { x= 100 y = -5 }
-			Orientation = "UPPER_LEFT"
+			position = { x= -326 y = -5 }
 		}
 		
 		guiButtonType = {
@@ -31,47 +26,21 @@ guiTypes = {
 			tooltip = ""
 			tooltipText =""
 			delayedTooltipText = ""
-			position = { x= -270 y = 6 }
-			Orientation = "UPPER_LEFT"
+			position = { x= -296 y = 17 }
 		}	
 
-		iconType =
-		{
-			name ="icon_score"
-			spriteType = "GFX_icon_score"
-			position = { x= 200 y = 4 }
-			Orientation = "UPPER_RIGHT"
-			hint_tag = "hint_score"
-		}
-		instantTextBoxType = {
-			name = "text_score"
-			position = { x = 136 y = 4 }
-			textureFile = ""
-			font = "vic_22"
-			borderSize = {x = 4 y = 4}
-			text = "100"	
-			maxWidth = 60
-			maxHeight = 32
-			format = right
-			Orientation = "UPPER_RIGHT"
-		}
-		instantTextBoxType = {
-			name = "text_score_rank"
-			position = { x = 220 y = 4 }
-			textureFile = ""
-			font = "vic_22"
-			borderSize = {x = 4 y = 4}
-			text = "100"	
-			maxWidth = 60
-			maxHeight = 32
-			format = centre
-			Orientation = "UPPER_RIGHT"
+		guiButtonType = {
+			name = "button_achievements"
+			quadTextureSprite ="GFX_button_achievements"
+			tooltip = ""
+			tooltipText =""
+			delayedTooltipText = ""
+			position = { x = -155 y = 12 }
 		}		
-		
 
 		instantTextBoxType = { 
 			name = "DateText"
-			position = { x = -270 y = 5 }
+			position = { x = -297 y = 16 }
 			textureFile = ""
 			font = "vic_18"
 			borderSize = {x = 0 y = 4}
@@ -79,7 +48,6 @@ guiTypes = {
 			maxWidth = 140
 			maxHeight = 32	
 			format = centre
-			Orientation = "UPPER_RIGHT"
 		}
 
 		
@@ -89,10 +57,55 @@ guiTypes = {
 			tooltip = ""
 			tooltipText =""
 			delayedTooltipText = ""
-			position = { x= -237 y = -9 }
-			Orientation = "UPPER_RIGHT"
+			position = { x= -263 y = 2 }
 		}
 
+		## End of Date
+
+		## Score
+
+		iconType =
+		{
+			name ="icon_score_bg"
+			spriteType = "GFX_score_bg"
+			position = { x= 100 y = 5 }
+		}
+
+		iconType =
+		{
+			name ="icon_score"
+			spriteType = "GFX_icon_score"
+			position = { x= 200 y = 15 }
+			hint_tag = "hint_score"
+		}
+		instantTextBoxType = {
+			name = "text_score"
+			position = { x = 136 y = 14 }
+			textureFile = ""
+			font = "vic_22"
+			borderSize = {x = 4 y = 4}
+			text = "100"	
+			maxWidth = 60
+			maxHeight = 32
+			format = right
+			Orientation = "UPPER_LEFT"
+		}
+		instantTextBoxType = {
+			name = "text_score_rank"
+			position = { x = 220 y = 15 }
+			textureFile = ""
+			font = "vic_22"
+			borderSize = {x = 4 y = 4}
+			text = "100"	
+			maxWidth = 60
+			maxHeight = 32
+			format = centre
+			Orientation = "UPPER_LEFT"
+		}		
+		
+		## End of Score		
+
+		## Hidden 
 
 		guiButtonType = {
 			name = "button_speedup"
@@ -133,16 +146,6 @@ guiTypes = {
 			position = { x = -50000 y = -50000 }
 			Orientation = "UPPER_RIGHT"
 		}
-
-		guiButtonType = {
-			name = "button_achievements"
-			quadTextureSprite ="GFX_button_achievements"
-			tooltip = ""
-			tooltipText =""
-			delayedTooltipText = ""
-			position = { x = -122 y = 1 }
-			Orientation = "UPPER_RIGHT"
-		}		
 
 		guiButtonType = {
 			name = "button_outliner"
