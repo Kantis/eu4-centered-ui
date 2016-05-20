@@ -1,0 +1,169 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_topbar_liberty_overlay"
+		texturefile = "gfx//interface//topbar_liberty_overlay.dds"
+	}
+
+	spriteType = {
+		name = "GFX_pause_banner"
+		texturefile = "gfx//interface//pause_banner.tga"
+		allwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_topbar_banner"
+		texturefile = "gfx//interface//topbar_banner.tga"
+		transparencecheck = yes
+	}
+
+	spriteType = {
+		name = "GFX_icon_corruption_small"
+		texturefile = "gfx//interface//icon_corruption_small.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_topbar_big_frame"
+		texturefile = "gfx//interface//topbar_big_frame.tga"
+		allwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_topbar_portrait_value_bg"
+		texturefile = "gfx//interface//topbar_portrait_value_bg.tga"
+	}
+
+	
+	spriteType = {
+		name = "GFX_icon_powers_administrative"
+		texturefile = "gfx//interface//icon_powers_administrative.tga"
+	}
+	
+	spriteType = {
+		name = "GFX_icon_powers_diplomatic"
+		texturefile = "gfx//interface//icon_powers_diplomatic.tga"
+	}
+	
+	spriteType = {
+		name = "GFX_icon_powers_military"
+		texturefile = "gfx//interface//icon_powers_military.tga"
+	}
+
+	spriteType = {
+		name = "GFX_icon_trade_league"
+		texturefile = "gfx//interface//icon_trade_league.tga"
+	}	
+
+	spriteType = {
+		name = "GFX_topbar_portrait_bg"
+		texturefile = "gfx//interface//topbar_portrait_bg.tga"
+		transparencecheck = yes
+	}
+	
+	spriteType = {
+		name = "GFX_topbar_bg"
+		texturefile = "gfx//interface//topbar_UL.tga"
+		transparencecheck = yes
+	}
+
+	spriteType = {
+		name = "GFX_endgame"
+		texturefile = "gfx//interface//endgame.tga"
+	}
+
+	spriteType = {
+		name = "GFX_icon_gold_strip"
+		texturefile = "gfx//interface//icon_gold_strip.dds"
+		noOfFrames = 2
+	}
+
+	spriteType = {
+		name = "GFX_icon_gold"
+		texturefile = "gfx//interface//icon_gold.tga"
+	}
+
+	spriteType = {
+		name = "GFX_icon_stability"
+		texturefile = "gfx//interface//icon_stability.tga"
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+
+	spriteType = {
+		name = "GFX_icon_manpower"
+		texturefile = "gfx//interface//icon_manpower.tga"
+	}
+	
+	spriteType = {
+		name = "GFX_icon_manpower2"
+		texturefile = "gfx//interface//icon_manpower2.tga"
+	}	
+	
+	spriteType = {
+		name = "GFX_icon_sailors"
+		texturefile = "gfx//interface//icon_sailors.tga"
+	}
+	
+	spriteType = {
+		name = "GFX_icon_sailors2"
+		texturefile = "gfx//interface//icon_sailors2.tga"
+	}	
+	
+	spriteType = {
+		name = "GFX_icon_prestige"
+		texturefile = "gfx//interface//icon_prestige.tga"
+	}
+
+	spriteType = {
+		name = "GFX_icon_powerprojection"
+		texturefile = "gfx//interface//icon_powerprojection.tga"
+	}	
+	
+
+
+
+
+	spriteType = {
+		name = "GFX_icon_missionary"
+		texturefile = "gfx//interface//icon_envoy_missionary.tga"
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+
+	spriteType = {
+		name = "GFX_icon_settler"
+		texturefile = "gfx//interface//icon_envoy_settler.tga"
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+
+	spriteType = {
+		name = "GFX_icon_diplomat"
+		texturefile = "gfx//interface//icon_envoy_diplomat.tga"
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+
+	spriteType = {
+		name = "GFX_icon_merchant"
+		texturefile = "gfx//interface//icon_envoy_merchant.tga"
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	
+	spriteType = {
+		name = "GFX_icon_legitimacy"
+		texturefile = "gfx//interface//icon_legitimacy.tga"
+		effectFile = "gfx/FX/buttonstate.lua"
+		noOfFrames = 4
+	}
+
+
+
+	
+	maskedShieldType = {
+		name = "thinshield"
+		textureFile1 = "gfx//interface//shield_frame.tga"
+		textureFile2 = "gfx//interface//shield_mask.tga"
+		effectFile = "gfx//FX//maskedflag.lua"
+		textureFile3 = "gfx//interface//client_state_symbols_medium.dds"
+		noOfFrames = 119
+		overlay_frames_per_row = 32
+		overlay_rows = 4
+	}
+}

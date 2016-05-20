@@ -1,0 +1,147 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_court_view_select_advisor_large_bg"
+		texturefile = "gfx//interface//court_view_select_advisor_large_bg.dds"
+		transparencecheck = yes			
+	}
+
+	spriteType = {
+		name = "GFX_court_view_select_advisor_huge_bg"
+		texturefile = "gfx//interface//court_view_select_advisor_military_bg.dds"
+		transparencecheck = yes			
+	}
+
+	spriteType = {
+		name = "GFX_military_view_unit_large_bg"
+		texturefile = "gfx//interface//military_view_unit_large_bg.dds"
+	}
+
+	spriteType = {
+		name = "GFX_military_view_unit_huge_bg"
+		texturefile = "gfx//interface//military_view_unit_huge_bg.dds"
+	}	
+	
+	spriteType = {
+		name = "GFX_country_military_view_bg"
+		texturefile = "gfx//interface//country_military_view_bg.dds"
+		loadType = "INGAME"
+		transparencecheck = yes	
+	}
+	spriteType = {
+		name = "GFX_country_military_view_bg_large"
+		texturefile = "gfx//interface//country_military_view_bg_large.dds"
+		loadType = "INGAME"
+		transparencecheck = yes	
+	}
+	spriteType = {
+		name = "GFX_country_military_view_bg_huge"
+		texturefile = "gfx//interface//country_military_view_bg_huge.dds"
+		loadType = "INGAME"
+		transparencecheck = yes	
+	}
+	
+	
+	spriteType = {
+		name = "GFX_activate_all_forts_button"
+		texturefile = "gfx//interface//activate_all_forts_button.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_mothball_all_forts_button"
+		texturefile = "gfx//interface//mothball_all_forts_button.dds"
+	}
+
+	spriteType = {
+		name = "GFX_active_forts_icon"
+		texturefile = "gfx//interface//active_forts_icon.dds"
+	}	
+	
+	
+	spriteType = {
+		name = "GFX_military_view_dividers"
+		texturefile = "gfx//interface//military_view_dividers.dds"
+	}	
+	spriteType = {
+		name = "GFX_military_view_unit_bg"
+		texturefile = "gfx//interface//military_view_unit_bg.dds"
+	}
+	spriteType = {
+		name = "GFX_military_view_select_unit"
+		texturefile = "gfx//interface//military_view_select_unit.dds"
+	}
+	textSpriteType = {
+		name = "GFX_military_view_change_unit"
+		texturefile = "gfx//interface//military_view_change_unit.dds"
+	}
+	spriteType = {
+		name = "GFX_military_view_icon_fire"
+		texturefile = "gfx//interface//military_view_icon_fire.dds"
+	}
+	spriteType = {
+		name = "GFX_military_view_icon_shock"
+		texturefile = "gfx//interface//military_view_icon_shock.dds"
+	}
+	spriteType = {
+		name = "GFX_military_view_icon_maneuver"
+		texturefile = "gfx//interface//military_view_icon_maneuver.dds"
+	}
+	spriteType = {
+		name = "GFX_military_view_icon_siege"
+		texturefile = "gfx//interface//military_view_icon_siege.dds"
+	}
+	spriteType = {
+		name = "GFX_dismiss_leader"
+		texturefile = "gfx//interface//dismiss_leader.dds"
+	}
+	spriteType = {
+		name = "GFX_military_view_leader_button"
+		texturefile = "gfx//interface//military_view_leader_button.dds"
+	}
+	spriteType = {
+		name = "GFX_recruit_general"
+		texturefile = "gfx//interface//recruit_general.dds"
+	}
+	spriteType = {
+		name = "GFX_recruit_conquistador"
+		texturefile = "gfx//interface//recruit_conquistador.dds"
+	}
+	spriteType = {
+		name = "GFX_recruit_admiral"
+		texturefile = "gfx//interface//recruit_admiral.dds"
+	}
+	spriteType = {
+		name = "GFX_recruit_explorer"
+		texturefile = "gfx//interface//recruit_explorer.dds"
+	}
+	spriteType = {
+		name = "GFX_convert_ruler_to_general"
+		texturefile = "gfx//interface//convert_ruler_to_general.dds"
+	}
+	spriteType = {
+		name = "GFX_convert_heir_to_general"
+		texturefile = "gfx//interface//convert_heir_to_general.dds"
+	}
+		
+		
+	##############################
+	spriteType = {	
+		name = "GFX_unit_status"
+		texturefile = "gfx//interface//unit_status.tga"
+		noOfFrames = 4
+		loadType = "INGAME"
+		
+		effectFile = "gfx/FX/buttonstate.lua"
+		transparencecheck = yes
+	}
+	
+	spriteType = {	
+		name = "GFX_has_leader_status"
+		texturefile = "gfx//interface//has_leader_status.tga"
+		noOfFrames = 2
+		loadType = "INGAME"
+		
+		effectFile = "gfx/FX/buttonstate.lua"
+		transparencecheck = yes
+	}
+}
