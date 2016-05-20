@@ -3,7 +3,7 @@ guiTypes = {
 	windowType = {
 		name = "topbar"
 		backGround=""
-		position = { x=0 y=-460 }	
+		position = { x=0 y=-450 }	
 		size = { x=622 y=200 }
 		moveable = 0
 		dontRender = ""
@@ -393,7 +393,7 @@ guiTypes = {
 		windowType = {
 			name = "powerprojection_topbar"
 			backGround=""
-			position = { x = 181 y = 0 }	
+			position = { x = 232 y = 0 }	
 			size = { x=100 y=100 }
 			moveable = 0
 			dontRender = ""
@@ -413,14 +413,14 @@ guiTypes = {
 				{
 					name ="icon_powerprojection"
 					spriteType = "GFX_icon_powerprojection"
-					position = { x= 0 y = 10 }
+					position = { x= 26 y = 10 }
 					Orientation = "UPPER_LEFT"
 					hint_tag = "hint_powerprojection"
 				}					
 
 				instantTextBoxType = {
 					name = "text_powerprojection"
-					position = { x = 0 y = 14 }
+					position = { x = 5 y = 14 }
 					textureFile = ""
 					font = "vic_18"
 					borderSize = {x = 4 y = 4}
@@ -627,7 +627,7 @@ guiTypes = {
 	windowType = {
 		name = "alerts_parent"
 		backGround=""
-		position = { x=-415 y=-466 }	
+		position = { x=-415 y=-456 }	
 		size = { x=2048 y=100 }
 		moveable = 0
 		dontRender = ""
