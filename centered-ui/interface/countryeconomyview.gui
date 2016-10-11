@@ -314,7 +314,7 @@ guiTypes = {
 			name ="take_loan"
 			quadTextureSprite= "GFX_take_loan_button"
 			position = { x= 280 y = 396 }
-			Orientation = "LOWER_LEFT"´
+			Orientation = "LOWER_LEFT"
 			buttonFont = "vic_18"
 			hint_tag = "hint_loans"
 		}
