@@ -2,6 +2,7 @@ guiTypes = {
 
 	windowType = {
 		name = "countrycourtview"
+		#position = { x=0 y=140 }	
 		position = { x=-600 y=140 }	
 		show_position = { x=900 y = -900 }
 		hide_position = { x=900 y = 10 }	
@@ -20,6 +21,22 @@ guiTypes = {
 			Orientation = "UPPER_LEFT"
 
 		}	
+
+		iconType =
+		{
+			name ="heir_banner_green"
+			spriteType = "GFX_court_banner_green"
+			position = { x= 10 y = 178 }
+			Orientation = "UPPER_LEFT"
+		}		
+		
+		iconType =
+		{
+			name ="queen_banner_green"
+			spriteType = "GFX_court_banner_green"
+			position = { x= 10 y = 241 }
+			Orientation = "UPPER_LEFT"
+		}		
 		
 		guiButtonType = {
 			name = "close_button"
@@ -36,124 +53,12 @@ guiTypes = {
 			textureFile = ""
 			font = "vic_29s"
 			borderSize = {x = 4 y = 4}	
-			text = "CATEGORY_GOVERNMENT"	
+			text = "CATEGORY_COURT"	
 			maxWidth = 512
 			maxHeight = 32
 			format = centre
 		}
 		
-		### ------- Government -------	
-		
-		iconType =
-		{
-			name ="revolution_target_icon"
-			spriteType = "GFX_revolution_target"
-			position = { x= 483  y = 72 }
-		}
-		
-		guiButtonType =
-		{
-			name ="government_change"
-			quadTextureSprite= "GFX_change_government_type_button"
-			position = { x= 10  y = 104 }
-			Orientation = "UPPER_LEFT"
-			hint_tag = "hint_changegov"
-		}		
-		
-		iconType =
-		{
-			name ="government_type_icon"
-			spriteType = "GFX_government_type_icon_big"
-			position = { x = 60 y = 116 }
-			Orientation = "UPPER_LEFT"
-			scale = 0.8
-			hint_tag = "hint_govtype"
-		}		
-		
-		instantTextBoxType = {
-			name = "government_name"
-			position = { x = 95 y =122 }
-			textureFile = ""
-			font = "verdana14b"
-			borderSize = {x = 4 y = 4}	
-			text = "GOVERNMENTYPE"	
-			maxWidth = 200
-			maxHeight = 32
-			format = left
-			hint_tag = "hint_govname"
-			fixedsize = yes
-		}	
-
-		guiButtonType =
-		{
-			name ="government_upgrade"
-			quadTextureSprite= "GFX_government_upgrade_strip"
-			position = { x = 3  y = 150 }
-			Orientation = "UPPER_LEFT"			
-		}	
-
-		iconType =
-		{
-			name ="icon_government_desc_1"
-			spriteType = "GFX_idea_empty"
-			position = { x= 47 y = 155 }
-			Orientation = "UPPER_LEFT"
-			scale = 0.5
-		}
-		instantTextBoxType = {
-			name = "government_desc_1"
-			position = { x = 72 y = 159 }
-			textureFile = ""
-			font = "verdana13b"
-			borderSize = {x = 4 y = 4}	
-			text = ""	
-			maxWidth = 80
-			maxHeight = 32
-			format = left
-		}		
-		
-		iconType =
-		{
-			name ="icon_government_desc_2"
-			spriteType = "GFX_idea_empty"
-			position = { x= 129 y = 155 }
-			Orientation = "UPPER_LEFT"
-			scale = 0.5
-		}
-		
-		instantTextBoxType = {
-			name = "government_desc_2"
-			position = { x = 155 y = 159 }
-			textureFile = ""
-			font ="verdana13b"
-			borderSize = {x = 4 y = 4}	
-			text = ""	
-			maxWidth = 80
-			maxHeight = 32
-			format = left
-		}		
-		
-		iconType =
-		{
-			name ="icon_government_desc_3"
-			spriteType = "GFX_idea_empty"
-			position = { x= 210 y = 155 }
-			Orientation = "UPPER_LEFT"
-			scale = 0.5
-			
-		}
-		
-		instantTextBoxType = {
-			name = "government_desc_3"
-			position = { x = 235 y = 159 }
-			textureFile = ""
-			font ="verdana13b"
-			borderSize = {x = 4 y = 4}	
-			text = ""	
-			maxWidth = 80
-			maxHeight = 32
-			format = left
-		}		
 		
 		### ------- Ruler -------	
 		
@@ -161,39 +66,51 @@ guiTypes = {
 		{
 			name ="monarch_gender"
 			spriteType = "GFX_gender_icon"
-			position = { x= 16 y = 188 }
+			position = { x= 16 y = 120 }
 			Orientation = "UPPER_LEFT"
 		}
+		
+		guiButtonType = {
+			name = "abdicate_ruler_button"
+			position = { x= 486	y = 139 }
+			quadTextureSprite ="GFX_abdicate_button"	
+			tooltip = ""
+			tooltipText =""
+			delayedTooltipText = ""
+			buttonFont = "vic_18"
+			clicksound = back_click
+		}			
 
 		instantTextBoxType = {
 			name = "monarch_title"
-			position = { x = 12 y = 186 }
+			position = { x = 35 y = 118 }
 			textureFile = ""
 			font = "vic_18"
 			borderSize = {x = 4 y = 4}	
 			text = "King Awesome"	
-			maxWidth = 277
+			maxWidth = 400
 			maxHeight = 32
-			format = centre
+			format = left
 			fixedsize = yes
 		}
 		
 		instantTextBoxType = {
-			name = "monarch_union_desc"
-			position = { x = 55 y = 235 }
+			name = "monarch_ruler_age"
+			position = { x = 445 y = 118 }
 			textureFile = ""
-			font ="verdana14b"
-			borderSize = {x = 4 y = 4}	
-			text = ""	
-			maxWidth = 200
+			font = "vic_18"
+			borderSize = {x = 4 y = 4}
+			text = ""
+			maxWidth = 70
 			maxHeight = 16
-			format = centre
+			format = right
 			fixedsize = yes
 		}
+
 		
 		instantTextBoxType = {
 			name = "monarch_adm_value"
-			position = { x = 97 y = 215 }
+			position = { x = 28 y = 148 }
 			textureFile = ""
 			font = "vic_18"
 			borderSize = {x = 4 y = 4}	
@@ -207,14 +124,14 @@ guiTypes = {
 		{
 			name ="monarch_adm_icon"
 			spriteType = "GFX_icon_powers_administrative"
-			position = { x= 88 y = 210 }
+			position = { x= 14 y = 146 }
 			Orientation = "UPPER_LEFT"
 			hint_tag = "hint_ruler"
 		}
 		
 		instantTextBoxType = {
 			name = "monarch_dip_value"
-			position = { x = 148 y = 215 }
+			position = { x = 78 y = 148 }
 			textureFile = ""
 			font = "vic_18"
 			borderSize = {x = 4 y = 4}	
@@ -228,14 +145,14 @@ guiTypes = {
 		{
 			name ="monarch_dip_icon"
 			spriteType = "GFX_icon_powers_diplomatic"
-			position = { x= 138 y = 210 }
+			position = { x= 64 y = 146 }
 			Orientation = "UPPER_LEFT"
 			hint_tag = "hint_ruler"
 		}
 
 		instantTextBoxType = {
 			name = "monarch_mil_value"
-			position = { x = 198 y = 215 }
+			position = { x = 128 y = 148 }
 			textureFile = ""
 			font = "vic_18"
 			borderSize = {x = 4 y = 4}	
@@ -249,60 +166,173 @@ guiTypes = {
 		{
 			name ="monarch_mil_icon"
 			spriteType = "GFX_icon_powers_military"
-			position = { x= 188 y = 210 }
+			position = { x= 114 y = 146 }
 			Orientation = "UPPER_LEFT"
 			hint_tag = "hint_ruler"
 		}
 
+		listboxType = 
+		{
+			name ="monarch_ruler_personality_list"
+			position = { x=160 y =130}
+			backGround=""
+			size = { x=300 y =300}
+			Orientation = "UPPER_LEFT"
+			horizontal = 1
+			spacing = 2
+			scrollbartype = "standardlistbox_slider"
+			borderSize = {x = 10 y = 10}
+		}
+
 		instantTextBoxType = {
 			name = "election_info"
-			position = { x = 10 y = 263 }
+			position = { x = 80 y = 244 }
 			textureFile = ""
 			font = "vic_18"
 			borderSize = {x = 4 y = 4}	
 			text = ""	
-			maxWidth = 300
+			maxWidth = 400
 			maxHeight = 16
 			format = centre
 		}			
 
+		### Heir ###
+		
 		iconType =
 		{
 			name ="heir_gender"
 			spriteType = "GFX_gender_icon"
-			position = { x= 16 y = 270 }
+			position = { x= 16 y = 183 }
 			Orientation = "UPPER_LEFT"
 		}
 
 		instantTextBoxType = {
 			name = "monarch_heir_name"
-			position = { x = 16 y = 263 }
+			position = { x = 35 y = 181 }
 			textureFile = ""
 			font = "vic_18"
 			borderSize = {x = 4 y = 4}	
 			text = ""	
-			maxWidth = 296
+			maxWidth = 400
 			maxHeight = 14
-			format = center
+			format = left
 			fixedsize = yes
 		}		
 		
 		instantTextBoxType = {
-			name = "monarch_heir_info"
-			position = { x = 10 y = 280 }
+			name = "monarch_heir_age"
+			position = { x = 445 y = 181 }
+			textureFile = ""
+			font = "vic_18"
+			borderSize = {x = 4 y = 4}
+			text = ""
+			maxWidth = 70
+			maxHeight = 16
+			format = right
+			fixedsize = yes
+		}
+
+		instantTextBoxType = {
+			name = "monarch_heir_claim"
+			position = { x = 240 y = 210 }
 			textureFile = ""
 			font = "vic_18"
 			borderSize = {x = 4 y = 4}	
 			text = ""	
-			maxWidth = 300
+			maxWidth = 240
+			maxHeight = 16
+			format = right
+			fixedsize = yes
+		}
+
+		instantTextBoxType = {
+			name = "monarch_heir_adm_value"
+			position = { x = 28 y = 211 }
+			textureFile = ""
+			font = "vic_18"
+			borderSize = {x = 4 y = 4}	
+			text = "?"	
+			maxWidth = 32
 			maxHeight = 16
 			format = centre
-			fixedsize = yes
 		}	
+
+		iconType =
+		{
+			name ="monarch_heir_adm_icon"
+			spriteType = "GFX_icon_powers_administrative"
+			position = { x= 14 y = 209 }
+			Orientation = "UPPER_LEFT"
+			hint_tag = "hint_heir"
+		}
 		
+		instantTextBoxType = {
+			name = "monarch_heir_dip_value"
+			position = { x = 78 y = 211 }
+			textureFile = ""
+			font = "vic_18"
+			borderSize = {x = 4 y = 4}	
+			text = "?"	
+			maxWidth = 32
+			maxHeight = 16
+			format = centre
+		}
+
+		iconType =
+		{
+			name ="monarch_heir_dip_icon"
+			spriteType = "GFX_icon_powers_diplomatic"
+			position = { x= 64 y = 209 }
+			Orientation = "UPPER_LEFT"
+			hint_tag = "hint_heir"
+		}
+
+		instantTextBoxType = {
+			name = "monarch_heir_mil_value"
+			position = { x = 128 y = 211 }
+			textureFile = ""
+			font = "vic_18"
+			borderSize = {x = 4 y = 4}	
+			text = "?"	
+			maxWidth = 32
+			maxHeight = 16
+			format = centre
+		}
+
+		iconType =
+		{
+			name ="monarch_heir_mil_icon"
+			spriteType = "GFX_icon_powers_military"
+			position = { x= 114 y = 209 }
+			Orientation = "UPPER_LEFT"
+			hint_tag = "hint_heir"
+		}
+
+		iconType =
+		{
+			name = "monarch_heir_crown_icon"
+			spriteType = "GFX_monarch_heir_crown_icon"
+			position = { x = 430 y = 184 }
+			Orientation = "UPPER_LEFT"
+
+		}
+
+		listboxType = 
+		{
+			name ="monarch_heir_personality_list"
+			position = { x=160 y =193}
+			backGround=""
+			size = { x=220 y =100}
+			Orientation = "UPPER_LEFT"
+			horizontal = 0
+			spacing = 2
+			scrollbartype = "standardlistbox_slider"
+			borderSize = {x = 10 y = 10}
+		}
+				
 		guiButtonType = {
 			name = "support_heir_button"
-			position = { x= 21	y = 267 }
+			position = { x= 490	y = 207 }
 			quadTextureSprite ="GFX_support_heir_button"	
 			tooltip = ""
 			tooltipText =""
@@ -310,155 +340,141 @@ guiTypes = {
 			buttonFont = "vic_18"
 			
 			clicksound = back_click
-		}			
-		
-		
-		windowType = {
-			name = "dutch_republic"
-			backGround =""
-			position = { x=0 y=273 }	
-			size = { x=280 y=50 }
-			moveable = 0
-			dontRender = ""
-			horizontalBorder = ""
-			Orientation = "UPPER_LEFT"
-					
-			iconType =
-			{
-				name ="statist_vs_orangist_overlay"
-				spriteType = "GFX_statist_vs_orangist_overlay"
-				position = { x= 16 y = -75 }
-			}
-			
-			iconType =
-			{
-				name ="current_progress_bg"
-				spriteType = "GFX_piety_bar_bg"
-				position = { x= 70 y = -20 }
-			}
-			
-			iconType =
-			{
-				name ="current_progress_frame"
-				spriteType = "GFX_statist_vs_orangist_frame"
-				position = { x= 37 y = -34 }
-			}
-			
-			iconType =
-			{
-				name ="statists"
-				spriteType = "GFX_republic_icon"
-				position = { x= 43 y = -24 }
-				frame = 1
-			}
-			
-			iconType =
-			{
-				name ="orangists"
-				spriteType = "GFX_monarchism_icon"
-				position = { x= 254 y = -29 }
-				frame = 1				
-			}
-			
-			iconType =
-			{
-				name ="current_value_icon"
-				spriteType = "GFX_war_overview_indicator"
-				position = { x= 133 y = -15 }
-			}
-			
-			instantTextBoxType = {
-				name = "current_value"
-				position = { x= 148 y = -21 }
-				font = "vic_18"
-				borderSize = {x = 0 y = 0}
-				text = ""	
-				maxWidth = 32
-				maxHeight = 24
-				Orientation = "UPPER_LEFT"
-				format = centre
-			}
-			
 		}
-				
+		guiButtonType = {
+			name = "disinherit_button"
+			position = { x= 486	y = 203 }
+			quadTextureSprite ="GFX_disinherit_button"	
+			tooltip = ""
+			tooltipText =""
+			delayedTooltipText = ""
+			buttonFont = "vic_18"
+			clicksound = back_click
+		}	
 		
-		### -----------
+		
+
+		### Queen ###
 		
 		iconType =
 		{
-			name ="monarch_cultures_icon"
-			spriteType = "GFX_monarch_cultures_icon"
-			position = { x= 335 y = 117 }
+			name ="queen_gender"
+			spriteType = "GFX_gender_icon"
+			position = { x= 16 y = 246 }
 			Orientation = "UPPER_LEFT"
-			hint_tag = "hint_primaryculture"
 		}
-		
+
 		instantTextBoxType = {
-			name = "monarch_cultures"
-			position = { x = 370 y = 125 }
+			name = "monarch_queen_name"
+			position = { x = 35 y = 244 }
 			textureFile = ""
 			font = "vic_18"
 			borderSize = {x = 4 y = 4}	
-			text = "Castillian"	
-			maxWidth = 170
-			maxHeight = 80
+			text = ""	
+			maxWidth = 400
+			maxHeight = 14
 			format = left
 			fixedsize = yes
-			hint_tag = "hint_acceptculture"
 		}		
 		
-		### -----------
-		
 		instantTextBoxType = {
-			name = "modifiers_title"
-			position = { x = 322 y = 186 }
+			name = "monarch_queen_age"
+			position = { x = 445 y = 244 }
+			textureFile = ""
+			font = "vic_18"
+			borderSize = {x = 4 y = 4}
+			text = ""
+			maxWidth = 70
+			maxHeight = 16
+			format = right
+			fixedsize = yes
+		}
+
+		instantTextBoxType = {
+			name = "monarch_queen_adm_value"
+			position = { x = 28 y = 274 }
 			textureFile = ""
 			font = "vic_18"
 			borderSize = {x = 4 y = 4}	
-			text = "COUNTRY_MODIFIERS"	
-			maxWidth = 220
-			maxHeight = 32
+			text = "?"	
+			maxWidth = 32
+			maxHeight = 16
 			format = centre
-			fixedsize = yes
-			hint_tag = "hint_countrymod"
-		}
-		
-		OverlappingElementsBoxType = {
-			name = "modifiers_box_1"
-			position = { x = 326 y = 209 }
-			size = { x = 217 y = 32 }
-			Orientation = "UPPER_LEFT"
-			format = left
-			spacing = 0
-		}
-
-		OverlappingElementsBoxType = {
-			name = "modifiers_box_2"
-			position = { x = 326 y = 240 }
-			size = { x = 217 y = 32 }
-			Orientation = "UPPER_LEFT"
-			format = left
-			spacing = 0
-		}
-
-		OverlappingElementsBoxType = {
-			name = "modifiers_box_3"
-			position = { x = 326 y = 271 }
-			size = { x = 217 y = 32 }
-			Orientation = "UPPER_LEFT"
-			format = left
-			spacing = 0
 		}	
 
-		guiButtonType = {
-			name = "modifier_view_button"
-			position = { x = 322 y = 178 }
-			quadTextureSprite ="GFX_country_modifier_button"	
-			shortcut = "m"
+		iconType =
+		{
+			name ="monarch_queen_adm_icon"
+			spriteType = "GFX_icon_powers_administrative"
+			position = { x= 14 y = 272 }
 			Orientation = "UPPER_LEFT"
-			clicksound = close_window
-		}		
+			hint_tag = "hint_heir"
+		}
 		
+		instantTextBoxType = {
+			name = "monarch_queen_dip_value"
+			position = { x = 78 y = 274 }
+			textureFile = ""
+			font = "vic_18"
+			borderSize = {x = 4 y = 4}	
+			text = "?"	
+			maxWidth = 32
+			maxHeight = 16
+			format = centre
+		}
+
+		iconType =
+		{
+			name ="monarch_queen_dip_icon"
+			spriteType = "GFX_icon_powers_diplomatic"
+			position = { x= 64 y = 272 }
+			Orientation = "UPPER_LEFT"
+			hint_tag = "hint_heir"
+		}
+
+		instantTextBoxType = {
+			name = "monarch_queen_mil_value"
+			position = { x = 128 y = 274 }
+			textureFile = ""
+			font = "vic_18"
+			borderSize = {x = 4 y = 4}	
+			text = "?"	
+			maxWidth = 32
+			maxHeight = 16
+			format = centre
+		}
+
+		iconType =
+		{
+			name ="monarch_queen_mil_icon"
+			spriteType = "GFX_icon_powers_military"
+			position = { x= 114 y = 272 }
+			Orientation = "UPPER_LEFT"
+			hint_tag = "hint_heir"
+		}
+
+		iconType =
+		{
+			name = "monarch_queen_crown_icon"
+			spriteType = "GFX_monarch_heir_crown_icon"
+			position = { x = 430 y = 247 }
+			Orientation = "UPPER_LEFT"
+
+		}
+
+		listboxType = 
+		{
+			name ="monarch_queen_personality_list"
+			position = { x=160 y =256}
+			backGround=""
+			size = { x=220 y =100}
+			Orientation = "UPPER_LEFT"
+			horizontal = 0
+			spacing = 2
+			scrollbartype = "standardlistbox_slider"
+			borderSize = {x = 10 y = 10}
+		}
+
 		### -----------
 		
 		listboxType = {
@@ -473,43 +489,8 @@ guiTypes = {
 			borderSize = {x = 0 y = 0}
 			allwaystransparent = yes
 		}
+		
 
-		iconType = 
-		{
-			name ="advisor_skill_ADM_icon"
-			spriteType = "GFX_icon_powers_administrative"
-			tooltip = ""
-			tooltipText =""
-			delayedTooltipText = ""
-			position = { x= 110 y = 311 }
-			Orientation = "UPPER_LEFT"
-			hint_tag = "hint_adm"
-		}
-		
-		iconType = 
-		{
-			name ="advisor_skill_DIP_icon"
-			spriteType = "GFX_icon_powers_diplomatic"
-			tooltip = ""
-			tooltipText =""
-			delayedTooltipText = ""
-			position = { x= 110 y = 397 }
-			Orientation = "UPPER_LEFT"
-			hint_tag = "hint_dip"
-		}
-		
-		iconType = 
-		{
-			name ="advisor_skill_MIL_icon"
-			spriteType = "GFX_icon_powers_military"
-			tooltip = ""
-			tooltipText =""
-			delayedTooltipText = ""
-			position = { x= 110 y = 483 }
-			Orientation = "UPPER_LEFT"
-			hint_tag = "hint_mil"
-		}
-		
 		guiButtonType = {
 			name = "national_focus_ADM"
 			position = { x= 379	y = 320 }
@@ -581,68 +562,7 @@ guiTypes = {
 			Orientation = "UPPER_LEFT"
 			hint_tag = "hint_mil"
 		}
-		
-		
-		### MODIFIER VIEW
-		windowType = {
-			name = "modifier_view"
-			backGround=""
-			position = { x=-7 y=0 }	
-			size = { x=1024 y=100 }
-			moveable = 0
-			dontRender = ""
-			horizontalBorder= ""
-			verticalBorder= ""
-			fullScreen = yes	
-			
-			iconType =
-			{
-				name ="domesticpanel_overlay"
-				spriteType = "GFX_court_view_select_advisor_bg"
-				position = { x= 0 y = -10 }
-				Orientation = "UPPER_LEFT"
-				
-			}
-			
-			instantTextBoxType = {
-				name = "description"
-				position = { x = 70 y =139 }
-				format = centre
-				font = "vic_22"
-				maxWidth = 420
-				maxHeight = 32	
-				Orientation = "UPPER_LEFT"
-				text = ""
-				format = center
-			}
-			
-			listboxType = 
-			{
-				name ="modifier_listbox"
-				position = { x=86 y =170}
-				backGround=""
-				size = { x=382 y =350}
-				Orientation = "UPPER_LEFT"
-				horizontal = 0
-				spacing = 2
-				scrollbartype = "standardlistbox_slider"
-				borderSize = {x = 10 y = 10}
-			}
-			
-			guiButtonType = {
-				name = "back_button"
-				position = { x=240 y =531}
-				quadTextureSprite ="GFX_standard_button_71"	
-				tooltip = ""
-				tooltipText =""
-				delayedTooltipText = ""
-				buttonText = "DOMESTIC_BACK"
-				buttonFont = "vic_18"
-				shortcut = "z"			
-				extra_shortcut = "ESCAPE"
-				clicksound = back_click
-			}		
-		}			
+
 
 		### SELECT ADVISOR
 		windowType = {
@@ -685,7 +605,7 @@ guiTypes = {
 				position = { x = 132 y =284 }
 				format = left
 				textureFile = ""
-				font = "verdana14b"
+				font = "vic_22"
 				borderSize = {x = 0 y = 0}
 				text = "NO_ADVISORS"	
 				maxWidth = 300
@@ -721,43 +641,42 @@ guiTypes = {
 				extra_shortcut = "ESCAPE"
 				clicksound = back_click
 			}		
-		}		
+		}
 	}
-	
+
 	################################################################################################
-	### --- Modifier view item
+	### --- Personality item
 	windowType = {
-		name = "countrycourtview_modifierviewitem"
+		name = "countrycourtview_personalityitem"
 		backGround =""
 		position = { x=0 y=0 }	
-		size = { x=520 y=32 }
+		size = { x=60 y=40 }
 		moveable = 0
 		dontRender = ""
 		horizontalBorder = ""
 		Orientation = "UPPER_LEFT"
 
-		instantTextBoxType = {
-			name = "modifier_text"
-			position = { x = 0 y = 0 }
-			textureFile = ""
-			font = "vic_22"
-			borderSize = {x = 4 y = 4}	
-			text = "7"	
-			maxWidth = 370
-			maxHeight = 32
-			format = left
-			Orientation = "UPPER_LEFT"
-		}		
-
 		iconType =
 		{
-			name ="modifier_icon"
+			name = "personality_icon"
 			spriteType = "GFX_idea_unknown"
-			position = { x = -30 y = -2 }
+			position = { x= 0 y = -10 }
 			Orientation = "UPPER_LEFT"
-			frame = 1
-			scale = 0.5
-		}		
+		}
+		iconType =
+		{
+			name ="no_personality_icon"
+			spriteType = "GFX_no_personality_chart"
+			position = { x= 26 y = 3 }
+		}
+		iconType =
+		{
+			name ="no_personality_overlay"
+			spriteType = "GFX_no_provinceView_chart_overlay_0.9"
+			position = { x= 6 y = 2 }
+#			scale = 0.86
+		}
+
 	}
 	
 	################################################################################################
@@ -766,28 +685,110 @@ guiTypes = {
 		name = "countrycourtview_abilitylistitem"
 		backGround =""
 		position = { x=0 y=0 }	
-		size = { x=480 y=86 }
+		size = { x=170 y=86 }
 		moveable = 0
 		dontRender = ""
 		horizontalBorder = ""
 		Orientation = "UPPER_LEFT"
 
 		instantTextBoxType = {
+			name = "advisor_name"
+			position = { x = 130 y = 0 }
+			textureFile = ""
+			font = "vic_22"
+			borderSize = {x = 4 y = 4}	
+			text = "Charles Darwin"	
+			maxWidth = 180
+			maxHeight = 16
+			format = center
+			fixedsize = yes
+		}
+
+		listboxType = {
+			name = "advisor_modifier_listbox"
+			backGround = ""
+			position = { x=70 y=28 }
+			size = { x=100 y=100 }
+			Orientation = "UPPER_LEFT"
+			horizontal = 1
+			spacing = 2.5
+			scrollbartype = "standardlistbox_slider"
+			borderSize = {x = 0 y = 0}
+		}
+		
+		instantTextBoxType = {
+			name = "advisor_cost"
+			position = { x=78 y=51 }
+			textureFile = ""
+			font = "vic_18"
+			borderSize = {x = 4 y = 4}	
+			text = ""	
+			maxWidth = 152
+			maxHeight = 30
+			format = left
+		}		
+
+		instantTextBoxType = {
+			name = "advisor_activefor"
+			position = { x = 261 y = 51 }
+			textureFile = ""
+			font = "vic_18"
+			borderSize = {x = 4 y = 4}	
+			text = ""	
+			maxWidth = 80
+			maxHeight = 30
+			format = right
+		}		
+		
+		guiButtonType =
+		{
+			name ="advisor_button"
+			quadTextureSprite= "GFX_advisor_noAdvisorType"
+			position = { x= 3 y = 3 }
+			Orientation = "UPPER_LEFT"
+			tooltip = ""
+			tooltipText =""
+			delayedTooltipText = ""
+			hint_tag = "hint_advisor"
+		}		
+		
+		guiButtonType = {
+			name = "advisor_sack"
+			position = { x=316 y = -1 }
+			quadTextureSprite ="GFX_dismiss_leader"	
+			tooltip = ""
+			tooltipText =""
+			delayedTooltipText = ""
+			buttonFont = "vic_18"
+		}
+
+		instantTextBoxType = {
 			name = "advisor_ability_skill"
 			position = { x = 100 y = 0 }
 			textureFile = ""
-			font = "verdana14b"
+			font = "vic_22"
 			borderSize = {x = 4 y = 4}	
 			text = "7"	
 			maxWidth = 30
 			maxHeight = 32
 			format = center
 			Orientation = "UPPER_LEFT"
-		}		
+		}
 		
+		iconType = 
+		{
+			name ="advisor_skill_icon"
+			spriteType = "GFX_icon_powers_administrative"
+			tooltip = ""
+			tooltipText =""
+			delayedTooltipText = ""
+			position = { x= 80 y = 0 }
+			Orientation = "UPPER_LEFT"
+		}
+
 		instantTextBoxType = {
 			name = "ability_skill"
-			position = { x = 438 y = 9 }
+			position = { x = 434 y = 3 }
 			textureFile = ""
 			font = "vic_36"
 			borderSize = {x = 4 y = 4}	
@@ -796,17 +797,16 @@ guiTypes = {
 			maxHeight = 32
 			format = center
 			Orientation = "UPPER_LEFT"
-		}			
-		
-		
+		}
+
 		iconType =
 		{
 			name ="power_progress"
 			spriteType = "GFX_default_progressbar"
 			position = { x= 362 y = 56 }
 			Orientation = "UPPER_LEFT"
-		}			
-		
+		}
+
 		instantTextBoxType = {
 			name = "power"
 			position = { x = 354 y = 53 }
@@ -830,79 +830,47 @@ guiTypes = {
 			position = { x= 351 y = 52 }
 			Orientation = "UPPER_LEFT"
 		}
-		
-		instantTextBoxType = {
-			name = "advisor_name"
-			position = { x = 120 y = 0 }
-			textureFile = ""
-			font ="verdana14b"
-			borderSize = {x = 4 y = 4}	
-			text = "Charles Darwin"	
-			maxWidth = 176
-			maxHeight = 16
-			format = center
-			fixedsize = yes
-		}
+	}
+
+	################################################################################################
+	### --- Advisor modifiers list item
+	windowType = {
+		name = "advisor_modifier_item"
+		backGround =""
+		position = { x=0 y=0 }	
+		size = { x=48 y=30 }
+		moveable = 0
+		dontRender = ""
+		horizontalBorder = ""
+		Orientation = "UPPER_LEFT"
 
 		instantTextBoxType = {
 			name = "advisor_desc"
-			position = { x = 78 y = 30 }
+			position = { x = 30 y = 5 }
 			textureFile = ""
-			font ="verdana13b"
+			font = "vic_18"
 			borderSize = {x = 4 y = 4}	
 			text = ""	
 			maxWidth = 310
-			maxHeight = 60
+			maxHeight = 25
 			format = left
 			truncate = yes
+			fixedsize = no
 		}
-		
-		instantTextBoxType = {
-			name = "advisor_cost"
-			position = { x = 83 y = 50 }
-			textureFile = ""
-			font = "verdana13b"
-			borderSize = {x = 4 y = 4}	
-			text = ""	
-			maxWidth = 236
-			maxHeight = 60
-			format = left
-		}		
 
-		instantTextBoxType = {
-			name = "advisor_activefor"
-			position = { x = 250 y = 50 }
-			textureFile = ""
-			font = "verdana13b"
-			borderSize = {x = 4 y = 4}	
-			text = ""	
-			maxWidth = 70
-			maxHeight = 30
-			format = right
-		}		
-		
-		guiButtonType =
+		iconType = 
 		{
-			name ="advisor_button"
-			quadTextureSprite= "GFX_advisor_noAdvisorType"
-			position = { x= 3 y = 3 }
+			name ="advisor_modifier_icon"
+			spriteType = "GFX_idea_unknown"
+			tooltip = ""
+			tooltipText =""
+			delayedTooltipText = ""
+			position = { x= 5 y = -1 }
 			Orientation = "UPPER_LEFT"
-			tooltip = ""
-			tooltipText =""
-			delayedTooltipText = ""
-			hint_tag = "hint_advisor"
-		}		
-		
-		guiButtonType = {
-			name = "advisor_sack"
-			position = { x=300 y = 0 }
-			quadTextureSprite ="GFX_dismiss_leader"	
-			tooltip = ""
-			tooltipText =""
-			delayedTooltipText = ""
-			buttonFont = "vic_18"
+			scale = 0.5
 		}
 	}
+		
 
 	################################################################################################
 	### --- Advisor selection list item
@@ -951,7 +919,7 @@ guiTypes = {
 			position = { x = 68 y =0 }
 			format = left
 			textureFile = ""
-			font = "verdana13b"
+			font = "vic_18"
 			borderSize = {x = 0 y = 0}
 			text = ""	
 			maxWidth = 180
@@ -1013,7 +981,7 @@ guiTypes = {
 			position = { x = 203 y =34 }
 			format = left
 			textureFile = ""
-			font = "verdana13b"
+			font = "vic_18"
 			borderSize = {x = 0 y = 0}
 			text = ""	
 			maxWidth = 124
@@ -1025,7 +993,7 @@ guiTypes = {
 			position = { x = 193 y =34 }
 			format = left
 			textureFile = ""
-			font = "verdana13b"
+			font = "vic_18"
 			borderSize = {x = 0 y = 0}
 			text = ""	
 			maxWidth = 140
@@ -1037,7 +1005,7 @@ guiTypes = {
 			position = { x = 68 y =49 }
 			format = left
 			textureFile = ""
-			font = "verdana13b"
+			font = "vic_18"
 			borderSize = {x = 0 y = 0}
 			text = ""	
 			maxWidth = 124
@@ -1050,7 +1018,7 @@ guiTypes = {
 			position = { x = 193 y =49 }
 			format = left
 			textureFile = ""
-			font = "verdana13b"
+			font = "vic_18"
 			borderSize = {x = 0 y = 0}
 			text = ""	
 			maxWidth = 180
@@ -1063,7 +1031,7 @@ guiTypes = {
 			position = { x = 68 y =34 }
 			format = left
 			textureFile = ""
-			font = "verdana13b"
+			font = "vic_18"
 			borderSize = {x = 0 y = 0}
 			text = ""	
 			maxWidth = 124
@@ -1075,29 +1043,37 @@ guiTypes = {
 			position = { x = 113 y =34 }
 			format = left
 			textureFile = ""
-			font ="verdana13b"
+			font = "vic_18"
 			borderSize = {x = 0 y = 0}
 			text = ""	
 			maxWidth = 124
 			maxHeight = 32	
 			Orientation = "UPPER_LEFT"
 		}
+		iconType =
+		{
+			name ="effect_icon"
+			spriteType = "GFX_idea_unknown"
+			position = { x= 62 y = 14 }
+			Orientation = "UPPER_LEFT"
+			scale = 0.4
+		}
 		instantTextBoxType = {
 			name = "effect"
-			position = { x = 68 y =18 }
+			position = { x = 88 y =18 }
 			format = left
 			textureFile = ""
-			font = "verdana13b"
+			font = "vic_18"
 			borderSize = {x = 0 y = 0}
 			text = ""	
-			maxWidth = 340
+			maxWidth = 260
 			maxHeight = 32	
 			Orientation = "UPPER_LEFT"
 		}
 		
 		guiButtonType = {
 			name = "dismiss_button"
-			position = { x = 320 y = -8}
+			position = { x = 330 y = -8}
 			quadTextureSprite ="GFX_dismiss_advisor"	
 			tooltip = ""
 			tooltipText =""
@@ -1105,350 +1081,5 @@ guiTypes = {
 			clicksound = back_click
 		}
 
-	}	
-
-	################################################################################################
-	### --- Select GOVERNMENT interface ---
-
-
-	windowType = {
-		name = "countrycourtview_fog_select"
-		backGround=""
-		position = { x=20 y=100 }	
-		size = { x=1024 y=100 }
-		moveable = 0
-		dontRender = ""
-		horizontalBorder= ""
-		verticalBorder= ""
-		fullScreen = yes	
-
-
-		iconType =
-		{
-			name ="domesticpanel_overlay"
-			spriteType = "GFX_govReb_change_government_bg"
-			position = { x= -27 y = 30 }
-			Orientation = "UPPER_LEFT"
-		}
-
-		instantTextBoxType = {
-			name = "domesticpanel_title"
-			position = { x= 60 y = 177 }
-			format = centre
-			textureFile = ""
-			font = "vic_22"
-			borderSize = {x = 0 y = 0}
-			text = "CHANGE_GOVERNMENT_TYPE"	
-			maxWidth = 400
-			maxHeight = 32	
-			Orientation = "UPPER_LEFT"
-		}
-
-		instantTextBoxType = {
-			name = "domestictext_fog_selection_name_current"
-			position = { x = 55 y =229 }
-			format = centre
-			textureFile = ""
-			font = "vic_22"
-			borderSize = {x = 0 y = 0}
-			text = ""	
-			maxWidth = 400
-			maxHeight = 32	
-			Orientation = "UPPER_LEFT"
-		}
-				
-		instantTextBoxType = {
-			name = "domestictext_fog_selection_name_effect"
-			position = { x = 55	 y =253 }
-			format = centre
-			textureFile = ""
-			font = "vic_18"
-			borderSize = {x = 0 y = 0}
-			text = ""	
-			maxWidth = 400
-			maxHeight = 65
-			fixedsize = yes				
-			Orientation = "UPPER_LEFT"
-		}
-		
-		OverlappingElementsBoxType = {
-			name = "description_icons_box"
-			position = { x= 110 y = 270 }	
-			size = { x = 300 y = 32 }
-			Orientation = "UPPER_LEFT"
-			format = center
-			spacing = 1
-		}	
-			
-		listboxType = 
-			{
-			name ="domesticpanel_fog_select_list"
-			position = { x=38 y =323}
-			backGround=""
-			size = { x=445 y =240}
-			Orientation = "UPPER_LEFT"
-			horizontal = 0
-			spacing = 2
-			scrollbartype = "standardlistbox_slider"
-			borderSize = {x = 10 y = 10}
-		}
-		
-		guiButtonType = {
-			name = "back_button"
-			position = { x=172 y =565}
-			quadTextureSprite ="button_type_7"	
-			tooltip = ""
-			tooltipText =""
-			delayedTooltipText = ""
-			buttonText = "BACK"
-			buttonFont = "vic_18"
-			clicksound = back_click
-		}
-		
 	}
-
-	#entry for listbox when selecting new form of government...
-
-	windowType = {
-		name = "countrycourtview_fog_selection_entry"
-		backGround=""
-		position = { x=0 y=0 }	
-		size = { x=150 y= 78 }
-		moveable = 0
-		dontRender = ""
-		horizontalBorder= ""
-		verticalBorder= ""
-		fullScreen = no	
-
-		guiButtonType =
-		{
-			name ="fog_selection_button"
-			quadTextureSprite= "GFX_govReb_change_government_entry_bg"
-			position = { x= -32 y = -7 }
-			Orientation = "UPPER_LEFT"
-			tooltip = ""
-			tooltipText =""
-			delayedTooltipText = ""
-
-		}
-		
-		
-		instantTextBoxType = {
-			name = "circle_text"
-			position = { x = 305 y =9 }
-			textureFile = ""
-			font = "vic_22"
-			borderSize = {x = 0 y = 0}
-			text = ""	
-			maxWidth = 60
-			maxHeight = 32	
-			Orientation = "UPPER_LEFT"
-			format = center
-		}
-		
-		iconType =
-		{
-			name ="administrative_icon"
-			spriteType = "GFX_icon_powers_administrative"
-			position = { x= 351 y = 8 }
-			Orientation = "UPPER_LEFT"
-			scale = 0.8
-		}	
-		
-		iconType =
-		{
-			name ="eligible_noneligible"
-			spriteType = "GFX_eligible_noneligible_strip"
-			position = { x= 382 y = 7 }
-			
-			Orientation = "UPPER_LEFT"
-		}
-		
-
-		instantTextBoxType = {
-			name = "gov_name"
-			position = { x = -15 y = 8 }
-			format = left
-			textureFile = ""
-			font = "vic_22"
-			borderSize = {x = 0 y = 0}
-			text = ""	
-			maxWidth = 300
-			maxHeight = 32	
-			Orientation = "UPPER_LEFT"
-		
-		}
-		
-		iconType =
-		{
-			name ="icon_gov_desc_1"
-			spriteType = "GFX_idea_empty"
-			position = { x= 0 y = 36 }
-			Orientation = "UPPER_LEFT"
-			scale = 0.5
-		}
-		
-		instantTextBoxType = {
-			name = "gov_desc_1"
-			position = { x = 23 y = 40 }
-			textureFile = ""
-			font = "vic_18"
-			borderSize = {x = 4 y = 4}	
-			text = ""	
-			maxWidth = 80
-			maxHeight = 32
-			format = left
-		}		
-		
-		iconType =
-		{
-			name ="icon_gov_desc_2"
-			spriteType = "GFX_idea_empty"
-			position = { x= 99 y = 36 }
-			Orientation = "UPPER_LEFT"
-			scale = 0.5
-		}
-		
-		instantTextBoxType = {
-			name = "gov_desc_2"
-			position = { x = 125 y = 40 }
-			textureFile = ""
-			font = "vic_18"
-			borderSize = {x = 4 y = 4}	
-			text = ""	
-			maxWidth = 80
-			maxHeight = 32
-			format = left
-		}		
-		
-		iconType =
-		{
-			name ="icon_gov_desc_3"
-			spriteType = "GFX_idea_empty"
-			position = { x= 198 y = 36 }
-			Orientation = "UPPER_LEFT"
-			scale = 0.5
-			
-		}
-		
-		instantTextBoxType = {
-			name = "gov_desc_3"
-			position = { x = 227 y = 40 }
-			textureFile = ""
-			font = "vic_18"
-			borderSize = {x = 4 y = 4}	
-			text = ""	
-			maxWidth = 80
-			maxHeight = 32
-			format = left
-		}		
-		
-		instantTextBoxType = {
-			name = "effect"
-			position = { x = -15 y = 19 }
-			format = left
-			textureFile = ""
-			font = "vic_18"
-			borderSize = {x = 0 y = 0}
-			text = ""	
-			maxWidth = 350
-			maxHeight = 22	
-			Orientation = "UPPER_LEFT"
-		}
-		
-	}
-	
-	################################################################################################
-	### --- Select GOVERNMENT interface ---	
-	
-	windowType = {
-		name = "countrycourtview_modifier_entry"
-		backGround =""
-		position = { x=0 y=0 }
-		size = { x=30 y=32 }
-		moveable = 0
-		dontRender = ""
-		horizontalBorder = "0"
-		verticalBorder = ""
-		fullScreen = no
-
-		iconType =
-		{
-			name ="modifier_bg"
-			spriteType = "GFX_country_modifier_frame"
-			position = { x = 0 y = 3 }
-			Orientation = "UPPER_LEFT"
-		}		
-		
-		iconType =
-		{
-			name ="icon"
-			spriteType = "GFX_idea_unknown"
-			position = { x = 0 y = 3 }
-			Orientation = "UPPER_LEFT"
-			frame = 1
-			scale = 0.5
-		}
-	}
-
-	windowType = {
-		name = "countrycourtview_trade_goods_modifier_entry"
-		backGround =""
-		position = { x=0 y=0 }
-		size = { x=30 y=32 }
-		moveable = 0
-		dontRender = ""
-		horizontalBorder = "0"
-		verticalBorder = ""
-		fullScreen = no
-
-		iconType =
-		{
-			name ="modifier_bg"
-			spriteType = "GFX_country_modifier_frame"
-			position = { x = 0 y = 3 }
-			Orientation = "UPPER_LEFT"
-		}		
-		
-		iconType =
-		{
-			name ="icon"
-			spriteType = "GFX_resource_icon_small"
-			position = { x = 2 y = 6 }
-			Orientation = "UPPER_LEFT"
-		}
-	}
-
-	################################################################################################	
-	
-	################################################################################################
-	### --- Select GOVERNMENT interface ---	
-	
-	windowType = {
-			name = "government_desc_entry"
-			position = { x= 0 y = 0 }	
-			size = { x=100 y=24 }
-			moveable = 0
-			Orientation = "UPPER_LEFT"
-			
-			iconType =
-			{
-				name ="icon_government_desc"
-				spriteType = "GFX_idea_empty"
-				position = { x= 5 y = 0 }
-				Orientation = "UPPER_LEFT"
-				scale = 0.5
-			}
-			instantTextBoxType = {
-				name = "text_government_desc"
-				position = { x = 30 y = 5 }
-				textureFile = ""
-				font = "vic_18"
-				borderSize = {x = 4 y = 4}	
-				text = ""	
-				maxWidth = 64
-				maxHeight = 32
-				format = left
-			}	
-		}
 }

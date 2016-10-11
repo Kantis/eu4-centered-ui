@@ -14,7 +14,7 @@ guiTypes = {
 		name ="countryreligionview_scaling_huge_min_inc"
 		position = { x= 1080 y = 330 }
 	}
-	
+
 	windowType = {
 		name = "fervor_power_entry"
 		backGround=""
@@ -265,7 +265,6 @@ guiTypes = {
 		moveable = 0
 		Orientation = "LOWER_LEFT"
 
-		
 		iconType =
 		{
 			name ="religionpanel_bg_top"
@@ -273,7 +272,7 @@ guiTypes = {
 			position = { x= -7 y = -10 }
 			Orientation = "UPPER_LEFT"
 		}
-		
+
 		iconType =
 		{
 			name ="religionpanel_bg_bottom"
@@ -281,11 +280,11 @@ guiTypes = {
 			position = { x= -7 y = -10 }
 			Orientation = "UPPER_LEFT"
 		}
-		
+			
 		guiButtonType = {
 				name = "close_button"
 				position = { x = 514 y = -1 }
-				quadTextureSprite ="GFX_closebutton2"
+				quadTextureSprite ="GFX_closebutton2"	
 				shortcut = "ESCAPE"
 				Orientation = "UPPER_LEFT"
 				clicksound = close_window
@@ -561,6 +560,139 @@ guiTypes = {
 		}
 		
 		
+############## COPTIC HOLY SITES	###### 
+
+		windowType = {
+			name = "coptic_specific_window"
+			backGround =""
+			position = { x=0 y=0 }	
+			size = { x=280 y=50 }
+			moveable = 0
+			dontRender = ""
+			horizontalBorder = ""
+			Orientation = "UPPER_LEFT"
+			
+			iconType =
+			{
+				name ="religion_overlay_orthodox_bg"
+				spriteType = "GFX_religion_blank_overlay_big_bg"
+				position = { x= 26 y = 231 }
+			}
+			
+			OverlappingElementsBoxType = {
+					name = "blessings"
+					position = { x = 30 y = 234 }
+					size = { x = 160 y = 32 }
+					Orientation = "UPPER_LEFT"
+					format = center
+					spacing = 7
+			}
+
+			iconType =
+			{
+				name ="holy_site_icon_1"
+				spriteType = "GFX_icon_religion_small"
+				position = { x = 35 y = 266 }
+				frame = 14
+#				scale = 0.75
+			}
+			
+			instantTextBoxType = {
+				name = "holy_site_name_1"
+				position = { x = 65 y = 271 }
+				font = "vic_22"
+				borderSize = {x = 0 y = 0}
+				text = "Alexanderia"	
+				maxWidth = 128
+				maxHeight = 24
+				Orientation = "UPPER_LEFT"
+				format = left
+			}
+			
+			iconType =
+			{
+				name ="holy_site_icon_2"
+				spriteType = "GFX_icon_religion_small"
+				position = { x = 35 y = 296 }
+				frame = 14
+#				scale = 0.75
+			}
+			
+			instantTextBoxType = {
+				name = "holy_site_name_2"
+				position = { x = 65 y = 301 }
+				font = "vic_22"
+				borderSize = {x = 0 y = 0}
+				text = "Alexanderia"	
+				maxWidth = 128
+				maxHeight = 24
+				Orientation = "UPPER_LEFT"
+				format = left
+			}
+			
+			iconType =
+			{
+				name ="holy_site_icon_3"
+				spriteType = "GFX_icon_religion_small"
+				position = { x = 195 y = 236 }
+				frame = 14
+#				scale = 0.75
+			}
+			
+			instantTextBoxType = {
+				name = "holy_site_name_3"
+				position = { x = 225 y = 241 }
+				font = "vic_22"
+				borderSize = {x = 0 y = 0}
+				text = "Alexanderia"	
+				maxWidth = 128
+				maxHeight = 24
+				Orientation = "UPPER_LEFT"
+				format = left
+			}
+			
+			iconType =
+			{
+				name ="holy_site_icon_4"
+				spriteType = "GFX_icon_religion_small"
+				position = { x = 195 y = 266 }
+				frame = 14
+#				scale = 0.75
+			}
+			
+			instantTextBoxType = {
+				name = "holy_site_name_4"
+				position = { x = 225 y = 271 }
+				font = "vic_22"
+				borderSize = {x = 0 y = 0}
+				text = "Alexanderia"	
+				maxWidth = 128
+				maxHeight = 24
+				Orientation = "UPPER_LEFT"
+				format = left
+			}
+			
+			iconType =
+			{
+				name ="holy_site_icon_5"
+				spriteType = "GFX_icon_religion_small"
+				position = { x = 195 y = 296 }
+				frame = 14
+#				scale = 0.75
+			}
+			
+			instantTextBoxType = {
+				name = "holy_site_name_5"
+				position = { x = 225 y = 301 }
+				font = "vic_22"
+				borderSize = {x = 0 y = 0}
+				text = "Alexanderia"	
+				maxWidth = 128
+				maxHeight = 24
+				Orientation = "UPPER_LEFT"
+				format = left
+			}
+		}
 		
 		
 ################# MUSLIM PIETY		
@@ -790,9 +922,76 @@ guiTypes = {
 			guiButtonType = {
 				name = "pick_deity"
 				position = { x=113 y = -17}
-				quadTextureSprite ="GFX_button_straight_87_32"
+				quadTextureSprite ="GFX_standard_button_71"
 				buttonText = "SELECT"
 				buttonFont = "Main_14"
+				Orientation = "LEFT"
+			}
+		}
+
+		################# Fetishist cults	
+		windowType = {
+			name = "fetishist_cult"
+			backGround =""
+			position = { x=32 y=300 }	
+			size = { x=280 y=50 }
+			moveable = 0
+			dontRender = ""
+			horizontalBorder = ""
+			Orientation = "UPPER_LEFT"
+					
+			iconType =
+			{
+				name ="religion_overlay_fetishist_bg"
+				spriteType = "GFX_religion_overlay_big_bg"
+				position = { x= 0 y = -70 }
+			}
+			
+			iconType =
+			{
+				name ="no_cult_icon"
+				spriteType = "GFX_icon_religion"
+				position = { x = 13 y = -51 }
+				Orientation = "UPPER_LEFT"
+			}
+			
+			iconType =
+			{
+				name ="cult_icon"
+				spriteType = "GFX_fetishists_strip"
+				position = { x= 25 y = -41 }
+			}
+			
+			instantTextBoxType = {
+				name = "cult_name"
+				position = { x= 104 y = -46 }
+				font = "vic_18"
+				borderSize = {x = 0 y = 0}
+				text = "RV_NO_CULT"	
+				maxWidth = 200
+				maxHeight = 24
+				Orientation = "UPPER_LEFT"
+				format = left
+			}
+			
+			instantTextBoxType = {
+				name = "cult_effect"
+				position = { x = 78 y = -25 }
+				font = "vic_18"
+				borderSize = {x = 0 y = 0}
+				text = ""	
+				maxWidth = 256
+				maxHeight = 24
+				Orientation = "UPPER_LEFT"
+				format = left
+			}
+			
+			guiButtonType = {
+				name = "pick_cult"
+				position = { x=113 y = -17}
+				quadTextureSprite ="GFX_standard_button_71"
+				buttonText = "SELECT"
+				buttonFont = "vic_18"
 				Orientation = "LEFT"
 			}
 		}
@@ -1329,6 +1528,7 @@ guiTypes = {
 				name ="religion_overlay_hindu_bg"
 				spriteType = "GFX_hindu_deities_overlay_bg"
 				position = { x= -27 y = -72 }
+				#position = { x= -39 y = -310 }
 			}
 			
 			listboxType = 
@@ -1337,6 +1537,46 @@ guiTypes = {
 				position = { x=56 y = -55}
 				backGround=""
 				size = { x=319 y =300}
+				Orientation = "UPPER_LEFT"
+				horizontal = 0
+				spacing = 1
+				scrollbartype = "standardlistbox_slider"
+				borderSize = {x = 10 y = 10}
+			}
+			
+			guiButtonType = {
+				name = "cancel"
+				position = { x=190 y = 230 }
+				quadTextureSprite ="GFX_standard_button_71"
+				buttonText = "BACK"
+				buttonFont = "vic_18"
+			}
+		}
+
+		################# Cult SELECTION		
+		windowType = {
+			name = "cult_selection_screen"
+			backGround =""
+			position = { x=32 y=300 }	
+			size = { x=280 y=50 }
+			moveable = 0
+			dontRender = ""
+			horizontalBorder = ""
+			Orientation = "UPPER_LEFT"
+					
+			iconType =
+			{
+				name ="religion_overlay_fetishist_bg"
+				spriteType = "GFX_hindu_deities_overlay_bg"
+				position = { x= -27 y = -72 }
+			}
+			
+			listboxType = 
+			{
+				name ="cult_listbox"
+				position = { x=16 y = -55}
+				backGround=""
+				size = { x=452 y=290 }
 				Orientation = "UPPER_LEFT"
 				horizontal = 0
 				spacing = 1
@@ -1439,10 +1679,74 @@ guiTypes = {
 		guiButtonType = {
 			name = "pick_deity"
 			position = { x=320 y = 1}
-			quadTextureSprite ="GFX_button_straight_87_32"
+			quadTextureSprite ="GFX_standard_button_71"
 			buttonText = "SELECT"
-			buttonFont = "Main_14"
+			buttonFont = "Main_14"			
 			Orientation = "LEFT"
+		}
+	}
+
+	################# Cult item
+	windowType = {
+		name = "fetishist_cult_item"
+		backGround =""
+		position = { x=10 y=-20 }	
+		size = { x=50 y=46 }
+		moveable = 0
+		dontRender = ""
+		horizontalBorder = ""
+		Orientation = "UPPER_LEFT"
+				
+		iconType =
+		{
+			name ="cult_item_icon"
+			spriteType = "GFX_fetishists_strip"
+			position = { x= 107 y = -4 }
+		}
+		
+		instantTextBoxType = {
+			name = "cult_item_name"
+			position = { x= 0 y = 7 }
+			font = "vic_18"
+			borderSize = {x = 0 y = 0}
+			text = "CultName"
+			maxWidth = 128
+			maxHeight = 24
+			Orientation = "UPPER_LEFT"
+			format = left
+		}
+		
+		instantTextBoxType = {
+			name = "cult_item_effect"
+			position = { x = 156 y = -2 }
+			font = "vic_18"
+			borderSize = {x = 0 y = 0}
+			text = "CultEffect"	
+			maxWidth = 208
+			maxHeight = 24
+			Orientation = "UPPER_LEFT"
+			format = left
+		}
+		
+		guiButtonType = {
+			name = "pick_cult"
+			position = { x=362 y = 1}
+			quadTextureSprite ="GFX_standard_button_71"
+			buttonText = "SELECT"
+			buttonFont = "vic_18"
+			Orientation = "LEFT"
+		}
+
+		instantTextBoxType = {
+			name = "cult_description_helper"
+			position = { x= 0 y = -3 }
+			font = "vic_18"
+			borderSize = {x = 0 y = 0}
+			text = "CULT_HELP_DESC"
+			maxWidth = 432
+			maxHeight = 42
+			Orientation = "UPPER_LEFT"
+			format = left
 		}
 	}
 	
@@ -1514,7 +1818,7 @@ guiTypes = {
 		guiButtonType = {
 			name = "pick_aspect"
 			position = { x=301 y = 1}
-			quadTextureSprite ="GFX_button_straight_87_32"
+			quadTextureSprite ="GFX_standard_button_71"
 			buttonText = "SELECT"
 			buttonFont = "Main_14"
 			Orientation = "LEFT"
@@ -1540,6 +1844,29 @@ guiTypes = {
 			position = { x= -6 y = -27 }
 			Orientation = "UPPER_LEFT"
 			hint_tag = "hint_cardinal"
+		}
+	}
+	
+	################################################################################################
+	### --- Blessing item
+	
+	windowType = {
+		name = "countryreligionview_blessingitem"
+		backGround =""
+		position = { x=0 y=0 }	
+		size = { x=24 y=24 }
+		moveable = 0
+		dontRender = ""
+		horizontalBorder = ""
+		Orientation = "CENTER"
+				
+		iconType =
+		{
+			name = "blessing_icon"
+			scale = 0.60
+			spriteType = "GFX_idea_unknown"
+			position = { x= 0 y = 0 }
+			Orientation = "UPPER_LEFT"
 		}
 	}	
 }

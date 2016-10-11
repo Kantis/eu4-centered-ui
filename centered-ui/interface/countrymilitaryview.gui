@@ -35,8 +35,9 @@ guiTypes = {
 			spriteType = "GFX_gender_icon"
 			position = { x= 70 y = 4 }
 			Orientation = "UPPER_LEFT"
+			scale = 0.8
 		}
-		
+
 		instantTextBoxType = {
 			name = "leader_name"
 			position = { x = 92 y = 4 }
@@ -48,6 +49,16 @@ guiTypes = {
 			maxHeight = 20	
 			fixedsize = yes	
 		}
+		
+		iconType =
+		{
+			name ="leader_personality"
+			spriteType = "GFX_idea_unknown"
+			position = { x= 69 y = 17 }
+			Orientation = "UPPER_LEFT"
+			scale = 0.3
+		}
+
 		instantTextBoxType = {
 			name = "leader_assignment"
 			position = { x = 92 y =17 }

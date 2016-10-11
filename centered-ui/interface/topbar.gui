@@ -18,6 +18,8 @@ guiTypes = {
 		animation_type = "decelerated"
 		animation_time = 600	
 
+		
+
 
 		iconType =
 		{
@@ -42,6 +44,10 @@ guiTypes = {
 			position = { x= 991532 y = -1 }
 			Orientation = "UPPER_LEFT"
 		}
+
+		
+		
+		
 
 		iconType =
 		{
@@ -69,10 +75,18 @@ guiTypes = {
 		}
 		
 		## Hidden
+		iconType = {
+			name = "great_power_button_base"
+			quadTextureSprite ="GFX_great_power_button_base"
+			position = { x= 91 y = 103 }
+			Orientation = "UPPER_LEFT"
+			alwaystransparent = yes
+		}		
+		
 		guiButtonType = {
 			name = "player_shield"
 			quadTextureSprite ="GFX_shield_fancy"
-			position = { x= -50000 y = -50000 }
+			position = { x= -5 y = 2 }
 			Orientation = "UPPER_LEFT"
 			tooltip = ""
 			tooltipText =""
@@ -80,10 +94,17 @@ guiTypes = {
 			shortcut = "F1"
 		}
 		
-		## Hidden
+		iconType = {
+			name = "player_shield_glow"
+			quadTextureSprite ="GFX_shield_fancy_great_power_glow"
+			position = { x= -5 y = 2 }
+			Orientation = "UPPER_LEFT"
+			alwaystransparent = yes
+		}
+		
 		guiButtonType = {
 			name = "open_build_interface_button"
-			position = { x = -50000 y = -50000 }
+			position = { x = 6 y = 109 }
 			quadTextureSprite ="GFX_open_build_interface"
 			tooltip = ""
 			tooltipText =""
@@ -93,6 +114,14 @@ guiTypes = {
 			hint_tag = "hint_macrobuild"
 			shortcut = "0"
 		}
+		
+		guiButtonType = {
+			name = "great_power_button"
+			position = { x = 98 y = 110 }
+			quadTextureSprite ="GFX_great_power_button"
+			buttonFont = "Main_14_black"
+			clicksound = macro_build
+		}		
 	
 	######### top bar portraits ###########
 		

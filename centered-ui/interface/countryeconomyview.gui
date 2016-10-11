@@ -298,27 +298,47 @@ guiTypes = {
 		###   Buttons
 		######################################################
 
-
-
+#GFX_take_loan_button
+		guiButtonType =
+		{
+			name ="debase_currency"
+			quadTextureSprite= "GFX_debase_currency"
+			position = { x= 486 y = 396 }
+			Orientation = "LOWER_LEFT"
+#			buttonText = "CV_DEBASE_CURRENCY"
+			buttonFont = "vic_18"
+		}
 		
 		guiButtonType =
 		{
 			name ="take_loan"
-			quadTextureSprite= "GFX_standard_button_224"
-			position = { x= 290 y = 375 }
-			Orientation = "LOWER_LEFT"
-			buttonText = "CV_TAKE_LOAN"
+			quadTextureSprite= "GFX_take_loan_button"
+			position = { x= 280 y = 396 }
+			Orientation = "LOWER_LEFT"´
 			buttonFont = "vic_18"
 			hint_tag = "hint_loans"
-		}	
+		}
+		
+		instantTextBoxType = {
+			name = "take_loan_sum"
+			position = { x = 282 y = 508 }
+			textureFile = ""
+			font = "vic_18"
+			borderSize = {x = 4 y = 4}	
+			text = "TAKE_LOAN_SUM"	
+			maxWidth = 100
+			maxHeight = 32
+			format = right
+			allwaystransparent = yes
+		}		
 		
 		guiButtonType =
 		{
 			name ="repay_loan"
-			quadTextureSprite= "GFX_standard_button_224"
-			position = { x= 290 y = 405 }
+			quadTextureSprite= "GFX_repay_loan"
+			position = { x= 394 y = 396 }
 			Orientation = "LOWER_LEFT"
-			buttonText = "CV_REPAY_LOAN"
+#			buttonText = "CV_REPAY_LOAN"
 			buttonFont = "vic_18"		
 			hint_tag = "hint_loans"	
 		}
@@ -326,10 +346,10 @@ guiTypes = {
 		guiButtonType =
 		{
 			name ="repay_all_loans"
-			quadTextureSprite= "GFX_standard_button_224"
-			position = { x= 290 y = 435 }
+			quadTextureSprite= "GFX_repay_all_loans"
+			position = { x= 440 y = 396 }
 			Orientation = "LOWER_LEFT"
-			buttonText = "CV_REPAY_X_LOANS"
+#			buttonText = "CV_REPAY_X_LOANS"
 			buttonFont = "vic_18"		
 			hint_tag = "hint_loans"	
 		}

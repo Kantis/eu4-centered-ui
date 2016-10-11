@@ -1130,7 +1130,7 @@ guiTypes = {
 			guiButtonType = {
 				name = "menu_load_button"
 				position = { x = 106 y = 80 }
-				quadTextureSprite ="button_type_7"	
+				quadTextureSprite ="button_type_8"
 				tooltip = ""
 				tooltipText =""
 				delayedTooltipText = ""
@@ -1141,7 +1141,7 @@ guiTypes = {
 			guiButtonType = {
 				name = "menu_save_button"
 				position = { x = 106 y = 120 }
-				quadTextureSprite ="button_type_7"	
+				quadTextureSprite ="button_type_8"	
 				tooltip = ""
 				tooltipText =""
 				delayedTooltipText = ""
@@ -1152,7 +1152,7 @@ guiTypes = {
 			guiButtonType = {
 				name = "menu_options_button"
 				position = { x = 106 y = 160}
-				quadTextureSprite ="button_type_7"	
+				quadTextureSprite ="button_type_8"	
 				tooltip = ""
 				tooltipText =""
 				delayedTooltipText = ""
@@ -1163,7 +1163,7 @@ guiTypes = {
 			guiButtonType = {
 				name = "menu_message_button"
 				position = { x = 106 y = 200}
-				quadTextureSprite ="button_type_7"	
+				quadTextureSprite ="button_type_8"	
 				tooltip = ""
 				tooltipText =""
 				delayedTooltipText = ""
@@ -1174,7 +1174,7 @@ guiTypes = {
 			guiButtonType = {
 				name = "menu_ai_prefs_button"
 				position = { x = 106 y = 240 }
-				quadTextureSprite ="button_type_7"
+				quadTextureSprite ="button_type_8"
 				tooltip = ""
 				tooltipText =""
 				delayedTooltipText = ""
@@ -1185,7 +1185,7 @@ guiTypes = {
 			guiButtonType = {
 				name = "menu_resign_button"
 				position = { x = 106 y = 280}
-				quadTextureSprite ="button_type_7"	
+				quadTextureSprite ="button_type_8"	
 				tooltip = ""
 				tooltipText =""
 				delayedTooltipText = ""
@@ -1196,7 +1196,7 @@ guiTypes = {
 			guiButtonType = {
 				name = "menu_quit_button"
 				position = { x = 106 y = 320 }
-				quadTextureSprite ="button_type_7"	
+				quadTextureSprite ="button_type_8"	
 				tooltip = ""
 				tooltipText =""
 				delayedTooltipText = ""
@@ -2313,7 +2313,6 @@ guiTypes = {
 			orientation = "UPPER_LEFT"
 			format = left
 			fixedsize = yes
-			alwaystransparent = yes
 		}
 
 
@@ -2555,6 +2554,9 @@ guiTypes = {
 				Orientation = "UPPER_LEFT"
 			}
 
+			
+			
+			
 			listboxType = 
 			{
 				name ="messagelog"
@@ -2567,6 +2569,8 @@ guiTypes = {
 				scrollbartype = "standardlistbox_slider"
 				borderSize = {x = 0 y = 0}
 			}
+			
+			
 			
 			checkboxType = {
 				name = "messagecat_events"
@@ -2929,7 +2933,14 @@ guiTypes = {
 				spriteType = "GFX_menubar_floating_bg"
 				position = { x= -597 y = -36 }
 				Orientation = "LOWER_RIGHT"
-			}		
+			}
+			iconType =
+			{
+				name ="menubar_floating_bg_7"
+				spriteType = "GFX_menubar_floating_bg"
+				position = { x= -652 y = -36 }
+				Orientation = "LOWER_RIGHT"
+			}
 			
 			instantTextBoxType = {
 				name = "floating_number_1"
@@ -3009,7 +3020,20 @@ guiTypes = {
 				format = centre	
 
 				Orientation = "LOWER_RIGHT"
-			}			
+			}
+			instantTextBoxType = {
+				name = "floating_number_7"
+				position = { x = -644 y = -38 }
+				
+				font = "vic_18"
+				borderSize = {x = 0 y = 0}
+				text = "100"	
+				maxWidth = 50
+				maxHeight = 32
+				format = centre	
+
+				Orientation = "LOWER_RIGHT"
+			}				
 	 
 			guiButtonType = {
 				name = "f_button_1"
@@ -3096,14 +3120,28 @@ guiTypes = {
 
 				Orientation = "LOWER_RIGHT"
 				hint_tag = "hint_papacy"
-			}		
+			}
+			
+			guiButtonType = {
+				name = "f_button_7"
+				position = { x = -630 y = -58 }
+				quadTextureSprite ="GFX_menubar_floating_strip"
+				tooltip = ""
+				tooltipText =""
+				delayedTooltipText = ""
+				buttonFont = "Main_14_black"
+
+				Orientation = "LOWER_RIGHT"
+				hint_tag = "hint_copts"
+			}
+			
 			iconType =
 			{
 				name ="revolution_flag"
 				spriteType = "GFX_rev_target"
 				position = { x = -446 y = -54 }
 				Orientation = "LOWER_RIGHT"				
-			}		
+			}
 		}
 			
 		
